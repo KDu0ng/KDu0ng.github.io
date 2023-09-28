@@ -22,3 +22,11 @@ h2 {
 a {
     color: #A4A400;
 }
+
+#copyright {
+    font-family: monospace;
+}
+
+#quote {
+    background-color: #A4A400;
+}
