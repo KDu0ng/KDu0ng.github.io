@@ -5,11 +5,11 @@ p, li {
 }
 
 h1 {
+    font-family: 'Lucida Sans Unicode';
     color: #A4A400;
     background-color: #F0F0F0;
     font-size: 22pt;
     text-align: center;
-    /*font-family: 'Lucida Sans Unicode';*/
 }
 
 h2 {
