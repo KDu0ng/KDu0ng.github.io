@@ -30,3 +30,28 @@ a {
 #quote {
     background-color: #ffff7f;
 }
+
+.ttip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+}
+  
+.ttip .text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.ttip:hover .text {
+    visibility: visible;
+}
