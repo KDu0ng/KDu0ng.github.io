@@ -31,9 +31,17 @@
                 <option value="crit">Critical</option>
             </select> <br/><br/>
 
-            <!-- TODO file and radio-->
+            <label for="attach">Attachments: </label> <br/>
+            <input type="file" name="attach" id="attach"/> <br/><br/>
+
+            <label for="flwup">Do you want a follow up email?</label> <br/>
+            <input type="radio" name="flwup" id="flwupy" value="yes"/>
+            <label for="flwupy" class="flwlbl">Yes</label>
+            <input type="radio" name="flwup" id="flwupy" value="no"/>
+            <label for="flwupn" class="flwlbl">No</label>
 
             <input type="submit" value="Submit" is="sbutton"/>
+            
         </div>
     </form>
 </body>
