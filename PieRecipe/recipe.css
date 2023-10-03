@@ -68,3 +68,16 @@ body {
     background-position: center;
     background-size: auto;
 }
+
+#pie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 280px;
+    height: 220px;
+}
+
+#pielink {
+    font-size: 15pt;
+}
