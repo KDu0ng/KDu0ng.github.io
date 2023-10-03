@@ -1,11 +1,11 @@
 p, li {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, Garamond, serif;
     color: #404040;
     font-size: 11pt;
 }
 
 h1 {
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
     color: #A4A400;
     background-color: #F0F0F0;
     font-size: 22pt;
@@ -13,6 +13,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
     color: #A4A400;
     background-color: #F0F0F0;
     font-size: 18pt;
