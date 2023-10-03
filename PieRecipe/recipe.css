@@ -35,9 +35,9 @@ a {
 .ttip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; 
+    border-bottom: 1px dotted black;
 }
-  
+
 .ttip .text {
     visibility: hidden;
     width: 120px;
@@ -46,18 +46,25 @@ a {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    
+
     position: absolute;
     z-index: 1;
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
 }
-  
+
 .ttip:hover .text {
     visibility: visible;
 }
 
 ul {
     list-style-image: url("pie_bullet.jpg");
+}
+
+body {
+    background-image: url("silverware.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 600%;
 }
