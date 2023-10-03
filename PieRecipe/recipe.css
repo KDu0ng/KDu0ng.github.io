@@ -56,3 +56,7 @@ a {
 .ttip:hover .text {
     visibility: visible;
 }
+
+ul {
+    list-style-image: "pie_bullet.jpg";
+}
