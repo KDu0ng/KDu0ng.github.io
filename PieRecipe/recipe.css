@@ -69,7 +69,7 @@ body {
     background-size: auto;
 }
 
-#pie {
+.pie {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -78,6 +78,6 @@ body {
     height: 220px;
 }
 
-#pielink {
+.pielink {
     font-size: 15pt;
 }
