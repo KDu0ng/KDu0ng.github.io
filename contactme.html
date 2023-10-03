@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <style>
+        
+    </style>
 </head>
 <body>
     <center><h1>Contact Me</h1></center>
@@ -11,18 +14,19 @@
     <form action="#" method="post" id="contactform"
         style="text-align: center;" onsubmit="alert('Not implemented yet');">
         <div id="fdiv">
-            <label for="myname">Name: </label> <br/>
+            <label for="myname">Name: <span class="rqd">*</span></label> <br/>
             <input type="text" name="myname" id="myname" required> <br/><br/>
 
-            <label for="myemail">Email: </label> <br/>
+            <label for="myemail">Email: <span class="rqd">*</span></label> <br/>
             <input type="email" name="myemail" id="myemail" required> <br/><br/>
 
-            <label for="subject">Subject: </label> <br/>
+            <label for="subject">Subject: <span class="rqd">*</span></label> <br/>
             <input type="text" name="Subject" id="Subject" placeholder="CS 101" required> <br/><br/>
 
+            <span class="rqd">*</span>
             <textarea name="tbody" id="tbody" placeholder="Enter message..." required></textarea> <br/><br/>
 
-            <label for="priority">Priority: </label> <br/>
+            <label for="priority">Priority: <span class="rqd">*</span></label> <br/>
             <select name="priority" id="priority" required>
                 <option disable selected value>-- Select an option --</option>
                 <option value="low">Low</option>
@@ -40,8 +44,9 @@
             <input type="radio" name="flwup" id="flwupy" value="no"/>
             <label for="flwupn" class="flwlbl">No</label>
 
+            <input type="hidden" id="hidden" name="humans"/>
+
             <input type="submit" value="Submit" is="sbutton"/>
-            
         </div>
     </form>
 </body>
