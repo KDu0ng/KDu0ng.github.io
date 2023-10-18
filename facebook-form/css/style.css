@@ -1,8 +1,59 @@
 body {
     font-family: "Freight Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
     background-color:  #edf0f5;
+    color: #333333;
 }
 
 h1 {
     font-family: "Freight Sans Bold", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+    margin-bottom: -15px;
+}
+
+div {
+    width: 350px;
+    margin: auto;
+}
+
+#first_name {
+    height: 24px;
+    width: 132px;
+    font-size: 11pt;
+    padding-left: 8px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+#last_name {
+    height: 24px;
+    width: 132px;
+    font-size: 11pt;
+    padding-left: 8px;
+}
+
+#myemail {
+    height: 24px;
+    width: 288px;
+    font-size: 11pt;
+    padding-left: 8px;
+    margin-bottom: 7px;
+}
+
+#reemail {
+    height: 24px;
+    width: 288px;
+    font-size: 11pt;
+    padding-left: 8px;
+    margin-bottom: 7px;
+}
+
+#mypassword {
+    height: 24px;
+    width: 288px;
+    font-size: 11pt;
+    padding-left: 8px;
+    margin-bottom: 7px;
+}
+
+#bday {
+    font-weight: bold;
 }
