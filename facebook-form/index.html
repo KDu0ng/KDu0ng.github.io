@@ -20,6 +20,8 @@
             <input type="password" name="mypassword" id="mypassword" size="15" maxlength="100" placeholder="New Password" required><br>
 
             <lable for="month" id="bday">Birthday</lable><br>
+
+            <a href="#" id="why">Why do I need to<br> provide my birthday?</a>
             <select name="month" id="month" required>
                 <option disable selected value>Month</option>
                 <option value="Jan">January</option>
@@ -71,7 +73,7 @@
                 <option value="31">31</option>
             </select>
 
-            <select name="year" class="year" required>
+            <select name="year" id="year" required>
                 <option disable selected value>Year</option>
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
@@ -198,14 +200,16 @@
                 <option value="1901">1901</option>
                 <option value="1900">1900</option>
             </select>
-            <a href="#">Why do I need to provide my birthday?</a>
+            
             <br>
             <input type="radio" name="female" id="female" value="female"/>
-                <label for="female" class="female">Female</label>
+                <label for="female" class="option">Female</label>
             <input type="radio" name="male" id="male" value="male"/>
-                <label for="male" class="male">Male</label>
+                <label for="male" class="option">Male</label>
             <br>
-            <p>By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a>.</p>
+            <p id="terms">By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a>.</p>
+
+            <input type="submit" value="Sign Up" id="signupbutton"/>
         </form>
     </div>
 </body>
