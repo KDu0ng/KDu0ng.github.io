@@ -2,6 +2,7 @@ body {
     font-family: "Freight Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
     background-color:  #edf0f5;
     color: #4e4e4e;
+    vertical-align: auto;
 }
 
 h1 {
