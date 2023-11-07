@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog54c</title>
+</head>
+<body>
+    <label for="rad">Radius: </label>
+    <input type="number" id="rad" name="rad">
+
+    <button onclick="
+        var rad = document.getElementById('rad').value;
+        var pi = 3.14;
+        var cir = rad * 2 * pi;
+        var area = pi * rad * rad;
+        document.writeln('Radius: ' + rad + ' Area: ' + area + ' Circumference: ' + cir);
+    ">Calculate Circle</button>
+</body>
+</html>
