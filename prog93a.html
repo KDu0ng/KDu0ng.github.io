@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog93a</title>
+</head>
+<body>
+    <label for="kwh">Enter KWH: </label>
+    <input type="number" id="kwh" name="kwh">
+
+    <button onclick="calc();">Find Cost</button>
+    <p id="out"></p>
+
+    <script>
+        function calc() {
+            var kwh = document.getElementById("kwh").value;
+            kwh = Number(kwh);
+
+            var base = kwh * 0.0475;
+            var sur = base * 0.1;
+            var city = base * 0.03;
+            var tot = base + sur + city;
+            var late = base * 0.03 + tot;
+
+            base = base.toFixed(2);
+            sur = sur.toFixed(2);
+            city = city.toFixed(2);
+            tot = tot.toFixed(2);
+            late = late.toFixed(2);
+            
+            var out = document.getElementById('out');
+            out.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;C O M P S C I Electric <br>------------------------------------------------<br>Kilowatts Used&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + kwh + '<br>------------------------------------------------<br><br>Base Rate &nbsp;&nbsp;&nbsp;' + kwh + ' @ $ 0.0475 &nbsp;&nbsp;&nbsp;$  ' +  base + '<br>Surcharge&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ ' + sur + '<br>Citytax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ ' + city + '<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------<br>Pay this amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ ' + tot + '<br><br>After May 20th Pay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ ' + late;
+        }
+    </script>
+</body>
+</html>

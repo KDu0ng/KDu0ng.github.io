@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog58b</title>
+</head>
+<body>
+    <label for="a">Enter A: </label>
+    <input type="number" id="a" name="a">
+
+    <label for="b">Enter B: </label>
+    <input type="number" id="b" name="b">
+
+    <label for="c">Enter C: </label>
+    <input type="number" id="c" name="c">
+
+    <button onclick="calc();">Find Root</button>
+    <p id="out"></p>
+
+    <script>
+        function calc() {
+            var a = document.getElementById("a").value; // "" and '' interchangable in script tag or js file.
+            a = Number(a);
+            var b = document.getElementById("b").value;
+            b = Number(b);
+            var c = document.getElementById("c").value;
+            c = Number(c);
+
+            var px = (-b + Math.sqrt(b**2 - 4 * a * c)) / (2 * a);
+            var nx = (-b - Math.sqrt(b**2 - 4 * a * c)) / (2 * a);
+            
+            var out = document.getElementById('out');
+            out.innerHTML = px + "     " + nx;
+        }
+    </script>
+</body>
+</html>
