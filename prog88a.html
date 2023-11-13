@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog88a</title>
+</head>
+<body>
+    <label for="num1">Num1: </label>
+    <input type="number" id="num1" name="num1" min="1" max="13">
+    <label for="num2">Num2: </label>
+    <input type="number" id="num2" name="num2" min="1" max="20">
+    <button onclick="doMath()">Calculate</button>
+    <p id="out"></p>
+
+    <script>
+        function doMath() {
+            var n1 = document.getElementById("num1").value;
+            n1 = Number(n1);
+            var n2 = document.getElementById("num2").value;
+            n2 = Number(n2);
+
+            var sum = n1 + n2;
+            var dif = n1 - n2;
+            var mul = n1 * n2;
+            var avg = (n1 + n2) / 2;
+            var abs = Math.abs(dif);
+            var max = 0;
+            var min = 0;
+            if (n1 > n2) {
+                max = n1;
+                min = n2;
+            } else {
+                max = n2;
+                min = n1;
+            }
+            
+            var out = document.getElementById("out");
+            out.innerHTML = "Sum: " + sum + "<br>Difference: " + dif + "<br>Product: " + mul + "<br>Average: " + avg + "<br>Absolute Value: " + abs + "<br>Max: " + max + "<br>Min: " + min;  
+        }
+    </script>
+</body>
+</html>
