@@ -10,14 +10,26 @@
 </head>
 <body>
     <div id="calc">
-        <label for="prin">Principle: </label>
-        <input type="number" id="prin" name="prin"> <br>
-        <label for="rate">Interest Rate as % (e.g. 7.9): </label>
-        <input type="number" id="rate" name="rate"> <br>
-        <label for="years">Number of Years: </label>
-        <input type="number" id="years" name="years"> <br>
-        <label for="month">Month Payment: </label>
-        <input type="number" id="month" name="month"> <br>
+        <p id="out"></p>
+        <div class="in">
+            <label for="prin">Principle: </label>
+            <input type="number" id="prin" name="prin"> <br>
+        </div>
+        <div class="in">
+            <label for="rate">Interest Rate as % (e.g. 7.9): </label>
+            <input type="number" id="rate" name="rate"> <br>
+        </div>
+        <div class="in">
+            <label for="years">Number of Years: </label>
+            <input type="number" id="years" name="years"> <br>
+        </div>
+        <div class="in">
+            <label for="month">Monthly Payment: </label>
+            <input type="number" id="month" name="month"> <br>
+        </div>
+        
+        <button id="cbut" onclick="calc()">Calculate</button>
+        <button id="rbut" onclick="reset()">Reset</button>
     </div>
     
 </body>

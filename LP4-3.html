@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP 4-3</title>
+</head>
+<body>
+    <label for="eggs"># of eggs: </label>
+    <input type="number" id="eggs" name="eggs" min="0">
+
+    <button onclick="calc()">Calculate Total Cost</button>
+    <p id="out"></p>
+
+    <script>
+        function calc() {
+            var eggs = Number(document.getElementById("eggs").value);
+            var dozen = Math.floor(eggs / 12);
+            eggs = eggs % 12;
+            var price = 0.0;
+            var total = 0.0;
+            var p = document.getElementById("out");
+
+            if (dozen < 0) {
+                p.innerHTML = "Invalid number of eggs";
+            } else if (dozen < 4) {
+                price = 0.50;
+            } else if (dozen < 6) {
+                price = 0.45;
+            } else if (dozen < 11) {
+                price = 0.40;
+            } else {
+                price = 0.35;
+            } 
+
+
+            if (dozen >= 0) {
+                total = price * dozen + eggs * price / 12;
+                p.innerHTML = "The bill is equal to: $"  + total.toFixed(2);
+            }
+        }
+    </script>
+</body>
+</html>
