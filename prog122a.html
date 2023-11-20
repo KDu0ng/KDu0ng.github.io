@@ -13,7 +13,7 @@
         var msg = "Number &emsp; Square &emsp; Square Root <br>";
         var lcv = 1;
         while (lcv <= 50) {
-            msg += lcv + " &emsp; " + (lcv**2) + " &emsp; " + Math.sqrt(lcv) + "<br>";
+            msg += lcv + "&emsp;&emsp;&emsp;&emsp; " + (lcv**2) + " &emsp;&emsp;&emsp;&emsp; " + Math.sqrt(lcv).toFixed(4) + "<br>";
             lcv++;
         }
         document.getElementById("out").innerHTML = msg;
