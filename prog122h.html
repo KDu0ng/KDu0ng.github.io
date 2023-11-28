@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog122d</title>
+</head>
+<body>
+    <p id="out"></p>
+
+    <script>
+        var msg = "Number &emsp; &emsp; &emsp; &emsp; &emsp; Square &emsp; &emsp; &emsp; &emsp; &emsp; Square Root &emsp; &emsp; &emsp; &emsp; &emsp; Cube &emsp; &emsp; &emsp; &emsp; &emsp; 4th Root<br>";
+        for (var c = 1; c <= 20; c++) {
+            msg += c + " &emsp;&emsp;&emsp; ";
+            msg += c + 1 + " &emsp;&emsp;&emsp; ";
+            msg += c * 2 + " &emsp;&emsp;&emsp; ";
+            msg += c ** 2 + "<br>";
+        }
+        document.getElementById("out").innerHTML = msg;
+    </script>
+</body>
+</html>
