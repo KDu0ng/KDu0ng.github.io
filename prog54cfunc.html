@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog54c</title>
+</head>
+<body>
+    <label for="rad">Radius: </label>
+    <input type="number" id="rad" name="rad">
+
+    <button onclick="calc()">Calculate Circle</button>
+    <button onclick="reset()">Reset</button>
+    <p id="out" style="background: skyblue; padding: 15px;"></p>
+
+    <script>
+        function reset() {
+            document.getElementById("rad").value = "";
+            document.getElementById("out").innerHTML = "";
+        }
+
+        function getArea(rad) {
+            return Math.PI * rad * rad;
+        }
+
+        function getCircumference(rad) {
+            return rad * 2 * Math.PI;
+        }
+
+        function calc() {
+            var rad = document.getElementById('rad').value;
+            var cir = getCircumference(rad);
+            var area = getArea(rad);
+            document.getElementById("out").innerHTML = "Radius: " + rad + "<br>Area: " + area + "<br>Circumference: " + cir;
+        }
+    </script>
+</body>
+</html>

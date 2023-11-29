@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euler 116</title>
+</head>
+<body>
+    <p id="out"></p>
+    <button onclick="calc()">Calculate</button>
+    <script>
+        function Red(len) {
+            var tot = 0;
+            if (len > 2) {
+                for (var c = 2; c < len; c++) {
+                    tot += Red(len - c);
+                }
+                return (len - 1) + tot;
+            } else if (len == 2) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        function Green(len) {
+            var tot = 0;
+            if (len > 3) {
+                for (var c = 3; c < len; c++) {
+                    tot += Red(len - c);
+                }
+                return (len - 2) + tot;
+            } else if (len == 3) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        function Blue(len) {
+            var tot = 0;
+            if (len > 4) {
+                for (var c = 4; c < len; c++) {
+                    tot += Red(len - c);
+                }
+                return (len - 3) + tot;
+            } else if (len == 4) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        function calc() {
+            var len = 50;
+            document.getElementById("out").innerHTML = Red(len) + Blue(len) + Green(len);
+        }
+    </script>
+</body>
+</html>
