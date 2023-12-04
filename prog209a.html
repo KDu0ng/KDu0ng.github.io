@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog209a</title>
+</head>
+<body>
+    <script>
+        var nums = [];
+        for (var c = 0; c < 400; c++) {
+            //randomly generate an int between 1 and 1000
+            var n = Math.round(Math.random() * 1000 - 0.5) + 1;
+            nums.push(n);
+        }
+
+        var lt = 0;
+        var gt = 0;
+        for (var c = 0; c < nums.length; c++) {
+            var current = nums[c];
+            if (current < 500) {
+                lt++;
+            } else {
+                gt++;
+            }
+        }
+
+        document.writeln("# of numbers >= 500: " + gt + "<br>");
+        document.writeln("# of numbers < 500: " + lt + "<br>");
+        document.writeln("# of numbers: " + nums.length + "<br><br>");
+        document.writeln(nums);
+    </script>    
+</body>
+</html>
