@@ -2,51 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <title>Home</title>
-    <style>
-        body {font-family:Arial;}
-        h1, h2, h3 {
-            font-family:Helvetica;
-        }
-        #maindiv {background-color: gainsboro;}
-        /*background and background-color are the same thing*/
-
-        a {
-            font-weight: bold;
-            color: rgb(4, 168, 197);
-        }
-    </style>
 </head>
 <body>
-    <div id="maindiv">
-        <h1>This is my first webpage!</h1>
-        <p>Hello, world!</p>
-        <a href="#filebrowser">To Class Files</a>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+    </header>
 
-        <h2>Subheading!</h2>
-        <p>More text!</p>
+    <div id="mainpage-home">
+        <div class="header-image-wrapper">
+            <img class="header-image" src="images/code.jpg" alt="coding background header">
+            <div id="pageheader-home">Hi, I'm</div>
+            <div id="pageheader-home2">Kevin<br>Duong</div>
+        </div>
+
+        <div class="bar">
+            <div class="decor">
+
+            </div>
+        </div>
     </div>
 
-    <div>
-        <h2 id=""filebrowser">Class Files</h2>
-        <ul>
-            <li><a href="practices.html">HTML Practices</a></li>
-            <li><a href="text.html">HTML Text</a></li>
-            <li><a href="eggrecipe.html">Egg recipe</a></li>
-            <li><a href="#">About Page</a></li>
-            <li>
-                <a href="cityfarmer/" target="_blank">Cityfarmer</a>
-                <ul>
-                    <li><a href="cityfarmer/index.html">Index</a></li>
-                    <li><a href="cityfarmer/cityfarmer.html">Main</a></li>
-                </ul>
-            </li>
-        </ul>
-        <blockquote>"This is my quote" - me</blockquote>
-        <a href="https://KDu0ng.github.io">GitHub Homepage</a>
-        <a href="mailto:duong.k@stu.janesville.k12.wi.us">Email me</a>
-        <a href="tel:+10001112222">(000)-111-2222</a>
-    </div>
+    <footer>
+        <p>Kevin Duong</p>
+        <p>2023</p>
+    </footer>
 </body>
 </html>
