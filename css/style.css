@@ -8,7 +8,7 @@ body {
 nav {
     margin: 0px;
     padding: 0px;
-    height: 60px;
+    height: 5vw;
     background-color: grey;
     list-style-type: none;
     overflow: hidden;
@@ -18,7 +18,7 @@ nav a {
     background-color: rgb(85, 85, 85);
     height: 100%;
     width: 20%;
-    padding: 19px 0;
+    padding: 2% 0;
     color: white;
     display: inline-block;
     text-decoration: none;
@@ -66,7 +66,7 @@ nav a:hover {
     width: 100%;
     height: 20px;
     position: relative;
-    margin: -4px 0 -18px 0;
+    margin: -4px 0 0px 0;
     background-color: rgb(0, 70, 0);
 }
 
@@ -89,7 +89,6 @@ nav a:hover {
 }
 
 #p1-tbox {
-    background-color: rgb(0, 78, 0);
     position: relative;
     height: 100%;
     width: 50%;
@@ -97,26 +96,72 @@ nav a:hover {
 
 #p1-decor {
     position: absolute;
-    background-color: lime;
-    width: 100px;
-    height: 100px;
-    left: 20px;
-    top: 20px;
+    background-color: rgb(0, 235, 0);
+    width: 90%;
+    height: 70%;
+    padding: 25px;
+    left: 5%;
+    top: 15%;
 }
 
 #p1-text {
     position: absolute;
-    background-color: limegreen;
-    left: 20px;
-    top: 20px;
+    background-color: rgb(0, 78, 0);
+    width: 90%;
+    height: auto;
+    padding: 25px;
+    left: 10%;
+    top: 10%;
+}
+
+#p1-text h2 {
+    font-size: 24pt;
+}
+
+#p1-text p {
+    font-size: 16pt;
 }
 
 #p2-wrapper {
     width: 100%;
-    height: auto;
-    background-color: rgb(0, 114, 0);
+    height: 450px;
+    position: relative;
+    background-color: rgb(0, 148, 0);
     margin: 0px;
-    padding: 0%;
+}
+
+#p2-tbox {
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+#p2-decor {
+    position: absolute;
+    background-color: rgb(0, 235, 0);
+    width: 90%;
+    height: 70%;
+    padding: 25px;
+    left: 5%;
+    top: 15%;
+}
+
+#p2-text {
+    position: absolute;
+    background-color: rgb(0, 78, 0);
+    width: 90%;
+    height: auto;
+    padding: 25px;
+    left: 10%;
+    top: 10%;
+}
+
+#p2-text h2 {
+    font-size: 24pt;
+}
+
+#p2-text p {
+    font-size: 16pt;
 }
 
 footer {
