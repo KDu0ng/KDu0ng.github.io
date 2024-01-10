@@ -48,7 +48,7 @@
 
             <div id="p2-tbox">
                 <div id="p2-decor"></div>
-                <div id="p2-tet">
+                <div id="p2-text">
                     <h2>What I Do</h2>
                     <p>&emsp; &emsp;I am a skilled programmer in many languages, including Java, C++,
                          and C#. I also know the basics of programming in C, Python, and Javascript.
@@ -65,35 +65,35 @@
                 <h2>Contact Me</h2>
                 <div id="form-left">
                     <label for="myname">Name: <span class="rqd">*</span></label> 
-                    <input type="text" name="myname" id="myname" placeholder="Enter Name" required> <br>
+                    <input type="text" name="myname" id="myname" placeholder="Enter Name" required> <br><br>
 
                     <label for="myemail">Email: <span class="rqd">*</span></label> 
-                    <input type="email" name="myemail" id="myemail" placeholder="Enter Email" required> <br>
+                    <input type="email" name="myemail" id="myemail" placeholder="Enter Email" required> <br><br>
 
                     <label for="subject">Subject: <span class="rqd">*</span></label>
-                    <input type="text" name="Subject" id="Subject" placeholder="Enter Subject" required> <br>
+                    <input type="text" name="Subject" id="Subject" placeholder="Enter Subject" required> <br><br>
 
                     <label for="priority">Priority: <span class="rqd">*</span></label> 
-                    <select name="priority" id="priority" required> <br>
+                    <select name="priority" id="priority" required> <br><br>
                         <option disable selected value>-- Select an option --</option>
                         <option value="low">Low</option>
                         <option value="med">Medium</option>
                         <option value="high">High</option>
                         <option value="crit">Critical</option>
-                    </select>  <br>
+                    </select>  <br><br>
 
                     <label for="flwup">Do you want a follow up email?</label> <br>
                     <input type="radio" name="flwup" id="flwupy" value="yes"/>
                     <label for="flwupy" class="flwlbl">Yes</label>
                     <input type="radio" name="flwup" id="flwupn" value="no"/>
-                    <label for="flwupn" class="flwlbl">No</label> <br>
+                    <label for="flwupn" class="flwlbl">No</label> <br><br>
 
                     <label for="attach">Attachments: </label> <br>
                     <input type="file" name="attach" id="attach"/> <br>
                 </div>
 
                 <div id="form-right">
-                    <label for="tbody">Message: <span class="rqd">*</span></label><br>
+                    <label for="tbody" id="msg">Message: <span class="rqd">*</span></label><br>
                     <textarea name="tbody" id="tbody" placeholder="Enter message..." required></textarea> 
 
                     <input type="hidden" id="hidden" name="humans"/>

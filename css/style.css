@@ -33,6 +33,10 @@ nav a:hover {
     margin-left: 20%;
 }
 
+#mainpage-home {
+    height: auto;
+}
+
 .header-image-wrapper {
     width: 100%;
     height: auto;
@@ -171,7 +175,7 @@ nav a:hover {
     height: 60%;
     padding: 25px;
     right: 5%;
-    top: 15%;
+    top: 20%;
 }
 
 #p2-text {
@@ -193,10 +197,17 @@ nav a:hover {
     font-size: 16pt;
 }
 
+#form-wrapper {
+    height: 420px;
+    margin: 0px;
+}
+
 form {
-    background-color: rgb(0, 59, 0);
-    margin: 0px 20px;
+    height: auto;
+    background-color: rgb(0, 58, 3);
     font-size: 14pt;
+    margin: 20px;
+    padding-bottom: 20px;
 }
 
 form h2 {
@@ -206,15 +217,26 @@ form h2 {
 }
 
 #form-left {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+}
+
+#form-right {
     position: absolute;
     display: inline-block;
     right: 0%;
     height: 100%;
-    width: 45%;
+    width: 50%;
 }
 
 label {
-    margin-left: 20px;
+    margin-left: 50px;
+}
+
+input {
+    width: 50%;
 }
 
 .flwlbl {
@@ -223,18 +245,37 @@ label {
 
 #flwupy, #flwupn {
     margin-left: 60px;
+    width: auto;
 }
 
 #attach {
-    margin-left: 20px;
+    margin-left: 50px;
+}
+
+#msg {
+    margin-left: 0;
 }
 
 #tbody {
     display: block;
-    margin-left: auto; 
-    margin-right: 20px;
-    width: 40%;
+    width: 80%;
     height: 100px;
+    margin-left: 0px;
+}
+
+#sbutton {
+    position: absolute;
+    left: auto;
+    right: 25%;
+    top: 25%;
+    border-style: none;
+    border-radius: 20px;
+    background-color: red;
+    width: 50%;
+    height: 50px;
+    color: white;
+    font-size: 22pt;
+
 }
 
 .rqd {
@@ -243,4 +284,8 @@ label {
 
 footer {
     background-color: grey;
+    color: white;
+    position: absolute;
+    bottom: -180%;
+    width: 100%;
 }
