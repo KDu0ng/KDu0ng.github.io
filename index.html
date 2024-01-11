@@ -9,100 +9,102 @@
     <title>Home</title>
 </head>
 <body>
-    <nav>
-        <a href="index.html" id="home">Home</a>
-        <a href="about.html" id="about">About</a>
-        <a href="projects.html" id="projects">Projects</a>
-    </nav>
+    <div id="homepage">
+        <nav>
+            <a href="index.html" id="home">Home</a>
+            <a href="about.html" id="about">About</a>
+            <a href="projects.html" id="projects">Projects</a>
+        </nav>
 
-    <main id="mainpage-home">
-        <section class="header-image-wrapper">
-            <img class="header-image" src="images/code.jpg" alt="coding header image">
-            <div id="pageheader-home">Hi, I'm</div>
-            <div id="pageheader-home2">Kevin<br>Duong</div>
-        </section>
+        <main id="mainpage-home">
+            <section class="header-image-wrapper">
+                <img class="header-image" src="images/code.jpg" alt="coding header image">
+                <div id="pageheader-home">Hi, I'm</div>
+                <div id="pageheader-home2">Kevin<br>Duong</div>
+            </section>
 
-        <div class="bar">
-            <div class="bar-decor"></div>
-        </div>
-
-        <section id="p1-wrapper">
-            <div id="p1-tbox">
-                <div id="p1-decor"></div>
-                <div id="p1-text">
-                    <h2>Who am I?</h2>
-                    <p>&emsp; &emsp;My name is Kevin Duong. I am a programmer from Wisconsin. 
-                        I got into coding during my highschool years and followed the 
-                        software engineering track as a hobby. Now, I am looking to dive into 
-                        the world of software. I also have other hobbies, including robotics
-                        and gaming. I love programming robots and watching them work. I also 
-                        love playing games and figuring out how things work while also having fun.</p>
-                </div>
+            <div class="bar">
+                <div class="bar-decor"></div>
             </div>
-            
-            <img id="p1-image" src="images/robot.jpg" alt="A robot, programmed for FRC">
-        </section>
 
-        <section id="p2-wrapper">
-            <img id="p2-image" src="images/software.jpg" alt="Laptop with code">
-
-            <div id="p2-tbox">
-                <div id="p2-decor"></div>
-                <div id="p2-text">
-                    <h2>What I Do</h2>
-                    <p>&emsp; &emsp;I am a skilled programmer in many languages, including Java, C++,
-                         and C#. I also know the basics of programming in C, Python, and Javascript.
-                         I offer my developer skills to anyone in need of software that needs to be 
-                         programmed. I am also experienced in web design and also offer these skills
-                         to those in need of a new website. If you need any of the skills I have, you
-                         are welcome to contact me using the form below.</p>
+            <section id="p1-wrapper">
+                <div id="p1-tbox">
+                    <div id="p1-decor"></div>
+                    <div id="p1-text">
+                        <h2>Who am I?</h2>
+                        <p>&emsp; &emsp;My name is Kevin Duong. I am a programmer from Wisconsin. 
+                            I got into coding during my highschool years and followed the 
+                            software engineering track as a hobby. Now, I am looking to dive into 
+                            the world of software. I also have other hobbies, including robotics
+                            and gaming. I love programming robots and watching them work. I also 
+                            love playing games and figuring out how things work while also having fun.</p>
+                    </div>
                 </div>
+                
+                <img id="p1-image" src="images/robot.jpg" alt="A robot, programmed for FRC">
+            </section>
+
+            <section id="p2-wrapper">
+                <img id="p2-image" src="images/software.jpg" alt="Laptop with code">
+
+                <div id="p2-tbox">
+                    <div id="p2-decor"></div>
+                    <div id="p2-text">
+                        <h2>What I Do</h2>
+                        <p>&emsp; &emsp;I am a skilled programmer in many languages, including Java, C++,
+                            and C#. I also know the basics of programming in C, Python, and Javascript.
+                            I offer my developer skills to anyone in need of software that needs to be 
+                            programmed. I am also experienced in web design and also offer these skills
+                            to those in need of a new website. If you need any of the skills I have, you
+                            are welcome to contact me using the form below.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div id="form-wrapper">
+                <form action="#" method="post" id="contactform" onsubmit="alert('Not implemented yet');">
+                    <h2>Contact Me</h2>
+                    <div id="form-left">
+                        <label for="myname">Name: <span class="rqd">*</span></label> 
+                        <input type="text" name="myname" id="myname" placeholder="Enter Name" required> <br><br>
+
+                        <label for="myemail">Email: <span class="rqd">*</span></label> 
+                        <input type="email" name="myemail" id="myemail" placeholder="Enter Email" required> <br><br>
+
+                        <label for="subject">Subject: <span class="rqd">*</span></label>
+                        <input type="text" name="Subject" id="Subject" placeholder="Enter Subject" required> <br><br>
+
+                        <label for="priority">Priority: <span class="rqd">*</span></label> 
+                        <select name="priority" id="priority" required> <br><br>
+                            <option disable selected value>-- Select an option --</option>
+                            <option value="low">Low</option>
+                            <option value="med">Medium</option>
+                            <option value="high">High</option>
+                            <option value="crit">Critical</option>
+                        </select>  <br><br>
+
+                        <label for="flwup">Do you want a follow up email?</label> <br>
+                        <input type="radio" name="flwup" id="flwupy" value="yes"/>
+                        <label for="flwupy" class="flwlbl">Yes</label>
+                        <input type="radio" name="flwup" id="flwupn" value="no"/>
+                        <label for="flwupn" class="flwlbl">No</label> <br><br>
+
+                        <label for="attach">Attachments: </label> <br>
+                        <input type="file" name="attach" id="attach"/> <br>
+                    </div>
+
+                    <div id="form-right">
+                        <label for="tbody" id="msg">Message: <span class="rqd">*</span></label><br>
+                        <textarea name="tbody" id="tbody" placeholder="Enter message..." required></textarea> 
+
+                        <input type="hidden" id="hidden" name="humans"/>
+
+                        <input type="submit" value="Submit" id="sbutton"/>
+                    </div>
+                </form>
             </div>
-        </section>
-
-        <div id="form-wrapper">
-            <form action="#" method="post" id="contactform" onsubmit="alert('Not implemented yet');">
-                <h2>Contact Me</h2>
-                <div id="form-left">
-                    <label for="myname">Name: <span class="rqd">*</span></label> 
-                    <input type="text" name="myname" id="myname" placeholder="Enter Name" required> <br><br>
-
-                    <label for="myemail">Email: <span class="rqd">*</span></label> 
-                    <input type="email" name="myemail" id="myemail" placeholder="Enter Email" required> <br><br>
-
-                    <label for="subject">Subject: <span class="rqd">*</span></label>
-                    <input type="text" name="Subject" id="Subject" placeholder="Enter Subject" required> <br><br>
-
-                    <label for="priority">Priority: <span class="rqd">*</span></label> 
-                    <select name="priority" id="priority" required> <br><br>
-                        <option disable selected value>-- Select an option --</option>
-                        <option value="low">Low</option>
-                        <option value="med">Medium</option>
-                        <option value="high">High</option>
-                        <option value="crit">Critical</option>
-                    </select>  <br><br>
-
-                    <label for="flwup">Do you want a follow up email?</label> <br>
-                    <input type="radio" name="flwup" id="flwupy" value="yes"/>
-                    <label for="flwupy" class="flwlbl">Yes</label>
-                    <input type="radio" name="flwup" id="flwupn" value="no"/>
-                    <label for="flwupn" class="flwlbl">No</label> <br><br>
-
-                    <label for="attach">Attachments: </label> <br>
-                    <input type="file" name="attach" id="attach"/> <br>
-                </div>
-
-                <div id="form-right">
-                    <label for="tbody" id="msg">Message: <span class="rqd">*</span></label><br>
-                    <textarea name="tbody" id="tbody" placeholder="Enter message..." required></textarea> 
-
-                    <input type="hidden" id="hidden" name="humans"/>
-
-                    <input type="submit" value="Submit" id="sbutton"/>
-                </div>
-            </form>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer>
         <p>Kevin Duong</p>
